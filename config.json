@@ -1,18 +1,12 @@
 {
-  "services": [
-    {
-      "host": "bitcarbon.herokuapp.com",
-      "port": "80"
-    }
-  ],
-  "eth_node": [
-    {
-      "host": "18.219.213.49",
-      "port": "8545"
-    }
-  ],
-  "contract_address": "0x87a7ceba62430958b0ce414ad1a4563bd145808b",
-  "abi": [
+  "services_host": "bitcarbon.herokuapp.com",
+  "services_host_port": "80",
+  "eth_host": "18.219.213.49",
+  "eth_host_port": "8545",
+  "bcde_address": "empty",
+  "bcde_abi": "empty",
+  "registry_address": "0x87a7ceba62430958b0ce414ad1a4563bd145808b",
+  "registry_abi": [
     {
       "constant": true,
       "inputs": [],
