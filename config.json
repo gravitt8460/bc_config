@@ -3,7 +3,7 @@
   "services_host_port": "80",
   "eth_host": "18.219.213.49",
   "eth_host_port": "8545",
-  "consortium_address": "0xa595ce93d99548b21371219699d39a771d8be73c",
+  "consortium_address": "0xe122ca2d143bebbd46c34cc61ceac369df540e6e",
   "consortium_abi": [
     {
       "constant": true,
@@ -582,7 +582,7 @@
       "type": "function"
     }
   ],
-  "bcde_address": "0xa595ce93d99548b21371219699d39a771d8be73c",
+  "bcde_address": "0x997839d1d46625d18ab46a35720ca7730d6f30e8",
   "bcde_abi": [
     {
       "constant": true,
@@ -1131,15 +1131,6 @@
     },
     {
       "constant": false,
-      "inputs": [],
-      "name": "deposit",
-      "outputs": [],
-      "payable": true,
-      "stateMutability": "payable",
-      "type": "function"
-    },
-    {
-      "constant": false,
       "inputs": [
         {
           "name": "_to",
@@ -1243,7 +1234,7 @@
       "type": "function"
     }
   ],
-  "registry_address": "0x553f546ba3c99a35e0c598eec4f7ed022847b646",
+  "registry_address": "0xc55b4c1a1fb0921326d27b177f122bde3ced2df9",
   "registry_abi": [
     {
       "constant": true,
@@ -1301,6 +1292,20 @@
       "type": "function"
     },
     {
+      "constant": true,
+      "inputs": [],
+      "name": "payee",
+      "outputs": [
+        {
+          "name": "",
+          "type": "address"
+        }
+      ],
+      "payable": false,
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
       "constant": false,
       "inputs": [
         {
@@ -1316,6 +1321,10 @@
     },
     {
       "inputs": [
+        {
+          "name": "_payee",
+          "type": "address"
+        },
         {
           "name": "_initialRate",
           "type": "uint256"
