@@ -1,5 +1,5 @@
 {
-  "services_host": "18.219.91.9",
+  "services_host": "bitcarbon.herokuapp.com",
   "services_host_port": "80",
   "eth_host": "18.219.213.49",
   "eth_host_port": "8545",
