@@ -3,7 +3,7 @@
   "services_host_port": "80",
   "eth_host": "18.219.213.49",
   "eth_host_port": "8545",
-  "consortium_address": "0xe122ca2d143bebbd46c34cc61ceac369df540e6e",
+  "consortium_address": "0x177376d2fFBad87777dE4FeE64E28d14ed380eE3",
   "consortium_abi": [
     {
       "constant": true,
@@ -582,7 +582,7 @@
       "type": "function"
     }
   ],
-  "bcde_address": "0x997839d1d46625d18ab46a35720ca7730d6f30e8",
+  "bcde_address": "0x4f8b111aa5c85c88b1e39c3113d6b6742fe2b367",
   "bcde_abi": [
     {
       "constant": true,
@@ -955,6 +955,67 @@
     },
     {
       "anonymous": false,
+      "inputs": [
+        {
+          "indexed": false,
+          "name": "payer",
+          "type": "address"
+        },
+        {
+          "indexed": false,
+          "name": "msg_value",
+          "type": "uint256"
+        },
+        {
+          "indexed": false,
+          "name": "earningsRatePercent",
+          "type": "uint256"
+        },
+        {
+          "indexed": false,
+          "name": "totalSupply",
+          "type": "uint256"
+        }
+      ],
+      "name": "DepositReceived",
+      "type": "event"
+    },
+    {
+      "anonymous": false,
+      "inputs": [
+        {
+          "indexed": false,
+          "name": "note",
+          "type": "string"
+        },
+        {
+          "indexed": false,
+          "name": "e",
+          "type": "uint256"
+        }
+      ],
+      "name": "LogUint",
+      "type": "event"
+    },
+    {
+      "anonymous": false,
+      "inputs": [
+        {
+          "indexed": false,
+          "name": "note",
+          "type": "string"
+        },
+        {
+          "indexed": false,
+          "name": "_addr",
+          "type": "address"
+        }
+      ],
+      "name": "LogAddress",
+      "type": "event"
+    },
+    {
+      "anonymous": false,
       "inputs": [],
       "name": "Pause",
       "type": "event"
@@ -1133,6 +1194,20 @@
       "constant": false,
       "inputs": [
         {
+          "name": "sender",
+          "type": "address"
+        }
+      ],
+      "name": "deposit",
+      "outputs": [],
+      "payable": true,
+      "stateMutability": "payable",
+      "type": "function"
+    },
+    {
+      "constant": false,
+      "inputs": [
+        {
           "name": "_to",
           "type": "address"
         },
@@ -1234,7 +1309,7 @@
       "type": "function"
     }
   ],
-  "registry_address": "0xb2201f9e8899fd8d94db29b7652b9cd006153611",
+  "registry_address": "0x7a80c3f8c4d5f2c4d91f6b5eac85391162eddb98",
   "registry_abi": [
     {
       "constant": true,
@@ -1294,7 +1369,7 @@
     {
       "constant": true,
       "inputs": [],
-      "name": "payee",
+      "name": "depositHandler",
       "outputs": [
         {
           "name": "",
@@ -1322,7 +1397,7 @@
     {
       "inputs": [
         {
-          "name": "_payee",
+          "name": "_depositHandler",
           "type": "address"
         },
         {
@@ -1342,6 +1417,11 @@
     {
       "anonymous": false,
       "inputs": [
+        {
+          "indexed": false,
+          "name": "depositHandler",
+          "type": "address"
+        },
         {
           "indexed": false,
           "name": "tokenID",
@@ -1581,6 +1661,20 @@
       "outputs": [],
       "payable": false,
       "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "constant": true,
+      "inputs": [],
+      "name": "getDepositHandler",
+      "outputs": [
+        {
+          "name": "",
+          "type": "address"
+        }
+      ],
+      "payable": false,
+      "stateMutability": "view",
       "type": "function"
     },
     {
