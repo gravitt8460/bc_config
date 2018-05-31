@@ -1,9 +1,9 @@
 {
-  "services_host": "bitcarbon.herokuapp.com",
+  "services_host": "18.219.91.9",
   "services_host_port": "80",
-  "eth_host": "18.219.213.49",
+  "eth_host": "18.217.227.228",
   "eth_host_port": "8545",
-  "consortium_address": "0x177376d2fFBad87777dE4FeE64E28d14ed380eE3",
+  "consortium_address": "0x4894d8c9de82bd768c3eecab32f7996eb854f4de",
   "consortium_abi": [
     {
       "constant": true,
@@ -582,7 +582,7 @@
       "type": "function"
     }
   ],
-  "bcde_address": "0x4f8b111aa5c85c88b1e39c3113d6b6742fe2b367",
+  "bcde_address": "0x7f0567f4319d90c97a6bd510eec2964379605627",
   "bcde_abi": [
     {
       "constant": true,
@@ -1309,7 +1309,7 @@
       "type": "function"
     }
   ],
-  "registry_address": "0x7a80c3f8c4d5f2c4d91f6b5eac85391162eddb98",
+  "registry_address": "0xeef9fea298797c381d3cfb44dc80c737239a77db",
   "registry_abi": [
     {
       "constant": true,
