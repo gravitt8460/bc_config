@@ -3,8 +3,55 @@
   "services_host_port": "80",
   "eth_host": "18.217.227.228",
   "eth_host_port": "8545",
-  "consortium_address": "0x0ad4e9f32b10abfb9bf138421d63268eb8ab9121",
+  "consortium_address": "0x705a328ec1d5c7d6046cf595fb1f15dffa41d1d1",
   "consortium_abi": [
+    {
+      "constant": true,
+      "inputs": [
+        {
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "name": "proposals",
+      "outputs": [
+        {
+          "name": "proposalType",
+          "type": "bytes32"
+        },
+        {
+          "name": "proposer",
+          "type": "address"
+        },
+        {
+          "name": "addressValue",
+          "type": "address"
+        },
+        {
+          "name": "bytesValue",
+          "type": "bytes32"
+        },
+        {
+          "name": "numValue",
+          "type": "uint256"
+        },
+        {
+          "name": "endDate",
+          "type": "uint256"
+        },
+        {
+          "name": "voteQuorum",
+          "type": "uint256"
+        },
+        {
+          "name": "closed",
+          "type": "bool"
+        }
+      ],
+      "payable": false,
+      "stateMutability": "view",
+      "type": "function"
+    },
     {
       "constant": true,
       "inputs": [
@@ -489,6 +536,59 @@
       "type": "function"
     },
     {
+      "constant": false,
+      "inputs": [
+        {
+          "name": "_proposalId",
+          "type": "uint256"
+        }
+      ],
+      "name": "getProposal",
+      "outputs": [
+        {
+          "components": [
+            {
+              "name": "proposalType",
+              "type": "bytes32"
+            },
+            {
+              "name": "proposer",
+              "type": "address"
+            },
+            {
+              "name": "addressValue",
+              "type": "address"
+            },
+            {
+              "name": "bytesValue",
+              "type": "bytes32"
+            },
+            {
+              "name": "numValue",
+              "type": "uint256"
+            },
+            {
+              "name": "endDate",
+              "type": "uint256"
+            },
+            {
+              "name": "voteQuorum",
+              "type": "uint256"
+            },
+            {
+              "name": "closed",
+              "type": "bool"
+            }
+          ],
+          "name": "",
+          "type": "tuple"
+        }
+      ],
+      "payable": false,
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
       "constant": true,
       "inputs": [],
       "name": "getProposalLength",
@@ -694,7 +794,7 @@
       "type": "function"
     }
   ],
-  "bcde_address": "0x9fdcf35f535fcd74239b1b5cd17e4f57bd6c2663",
+  "bcde_address": "0x31246989213e39368c4d076fb1b0ff88fda45381",
   "bcde_abi": [
     {
       "constant": true,
@@ -1421,7 +1521,7 @@
       "type": "function"
     }
   ],
-  "registry_address": "0x9b0e6bf4bc4c198912266d8d885a975f8608d749",
+  "registry_address": "0xb80016223f962682bc70e1d2e87858cd20370913",
   "registry_abi": [
     {
       "constant": true,
