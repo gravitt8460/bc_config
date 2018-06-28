@@ -3,7 +3,7 @@
   "services_host_port": "80",
   "eth_host": "18.217.227.228",
   "eth_host_port": "8545",
-  "consortium_address": "0x705a328ec1d5c7d6046cf595fb1f15dffa41d1d1",
+  "consortium_address": "0x7ff33e7caff777930331eca0885aa28c26d8fd65",
   "consortium_abi": [
     {
       "constant": true,
@@ -15,6 +15,10 @@
       ],
       "name": "proposals",
       "outputs": [
+        {
+          "name": "proposalId",
+          "type": "uint256"
+        },
         {
           "name": "proposalType",
           "type": "bytes32"
@@ -548,6 +552,10 @@
         {
           "components": [
             {
+              "name": "proposalId",
+              "type": "uint256"
+            },
+            {
               "name": "proposalType",
               "type": "bytes32"
             },
@@ -794,7 +802,7 @@
       "type": "function"
     }
   ],
-  "bcde_address": "0x31246989213e39368c4d076fb1b0ff88fda45381",
+  "bcde_address": "0x899094206cb3886ebd5567d7f6128eeee88d9019",
   "bcde_abi": [
     {
       "constant": true,
@@ -1521,7 +1529,7 @@
       "type": "function"
     }
   ],
-  "registry_address": "0xb80016223f962682bc70e1d2e87858cd20370913",
+  "registry_address": "0xb70dc9e8a511a7fef733af7819ba36a771210bca",
   "registry_abi": [
     {
       "constant": true,
