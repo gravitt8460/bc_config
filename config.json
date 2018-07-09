@@ -3,7 +3,7 @@
   "services_host_port": "80",
   "eth_host": "18.217.227.228",
   "eth_host_port": "8545",
-  "consortium_address": "0x46e70bfb6e8d3614bcf2e5e78db491a207f9ec42",
+  "consortium_address": "0x4b1f14f6300ce69670eeefc09068bbb65e70ba1a",
   "consortium_abi": [
     {
       "constant": true,
@@ -32,8 +32,8 @@
           "type": "address"
         },
         {
-          "name": "bytesValue",
-          "type": "bytes32"
+          "name": "stringValue",
+          "type": "string"
         },
         {
           "name": "numValue",
@@ -359,8 +359,8 @@
         },
         {
           "indexed": false,
-          "name": "bytesValue",
-          "type": "bytes32"
+          "name": "stringValue",
+          "type": "string"
         },
         {
           "indexed": false,
@@ -433,8 +433,8 @@
         },
         {
           "indexed": false,
-          "name": "bytesValue",
-          "type": "bytes32"
+          "name": "stringValue",
+          "type": "string"
         },
         {
           "indexed": false,
@@ -568,8 +568,8 @@
               "type": "address"
             },
             {
-              "name": "bytesValue",
-              "type": "bytes32"
+              "name": "stringValue",
+              "type": "string"
             },
             {
               "name": "numValue",
@@ -628,6 +628,28 @@
       "constant": false,
       "inputs": [
         {
+          "name": "_address",
+          "type": "address"
+        },
+        {
+          "name": "_stringValue",
+          "type": "string"
+        },
+        {
+          "name": "_numValue",
+          "type": "uint256"
+        }
+      ],
+      "name": "proposeAllOther",
+      "outputs": [],
+      "payable": false,
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "constant": false,
+      "inputs": [
+        {
           "name": "_member",
           "type": "address"
         }
@@ -662,6 +684,10 @@
         {
           "name": "_amount",
           "type": "uint256"
+        },
+        {
+          "name": "_stringValue",
+          "type": "string"
         }
       ],
       "name": "proposeSendEther",
@@ -802,7 +828,7 @@
       "type": "function"
     }
   ],
-  "bcde_address": "0xf0c8be36491f1f54c86d2fe0b953604d6a7d3fd0",
+  "bcde_address": "0x0eaebbf026370e271bcd5e61643085deb45927ed",
   "bcde_abi": [
     {
       "constant": true,
@@ -1529,7 +1555,7 @@
       "type": "function"
     }
   ],
-  "registry_address": "0x7477d84ff62a5cee68a89963ef9d7d21dccad197",
+  "registry_address": "0xc7b67d3918b4338cb40aec595921b84d7ce18d52",
   "registry_abi": [
     {
       "constant": true,
