@@ -828,7 +828,7 @@
       "type": "function"
     }
   ],
-  "bcde_address": "0x0eaebbf026370e271bcd5e61643085deb45927ed",
+  "bcde_address": "0x0cfe89cdc9e4e2175e7b8b3092da1c61b9f00a34",
   "bcde_abi": [
     {
       "constant": true,
@@ -1555,8 +1555,39 @@
       "type": "function"
     }
   ],
-  "registry_address": "0xc7b67d3918b4338cb40aec595921b84d7ce18d52",
+  "registry_address": "0x1163a2e5c7f668abdbd0b8bac63e56f09a9edd30",
   "registry_abi": [
+    {
+      "constant": true,
+      "inputs": [
+        {
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "name": "diamonds",
+      "outputs": [
+        {
+          "name": "diamondId",
+          "type": "uint256"
+        },
+        {
+          "name": "certificateNumber",
+          "type": "string"
+        },
+        {
+          "name": "agency",
+          "type": "string"
+        },
+        {
+          "name": "caratWeight",
+          "type": "uint256"
+        }
+      ],
+      "payable": false,
+      "stateMutability": "view",
+      "type": "function"
+    },
     {
       "constant": true,
       "inputs": [],
@@ -1579,33 +1610,6 @@
         {
           "name": "",
           "type": "address"
-        }
-      ],
-      "payable": false,
-      "stateMutability": "view",
-      "type": "function"
-    },
-    {
-      "constant": true,
-      "inputs": [
-        {
-          "name": "",
-          "type": "uint256"
-        }
-      ],
-      "name": "diamondsInfo",
-      "outputs": [
-        {
-          "name": "certificateNumber",
-          "type": "bytes32"
-        },
-        {
-          "name": "agency",
-          "type": "bytes32"
-        },
-        {
-          "name": "caratWeight",
-          "type": "uint256"
         }
       ],
       "payable": false,
@@ -1676,12 +1680,12 @@
         {
           "indexed": false,
           "name": "certifier",
-          "type": "bytes32"
+          "type": "string"
         },
         {
           "indexed": false,
           "name": "certificateNumber",
-          "type": "bytes32"
+          "type": "string"
         },
         {
           "indexed": false,
@@ -1874,11 +1878,11 @@
       "inputs": [
         {
           "name": "_certifier",
-          "type": "bytes32"
+          "type": "string"
         },
         {
           "name": "_certificateNumber",
-          "type": "bytes32"
+          "type": "string"
         },
         {
           "name": "_caratWeight",
