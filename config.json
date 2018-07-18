@@ -2251,7 +2251,7 @@
     }
   ],
   "bcdatoken_address" : "0xceeaa459ccd2113029214024fd6442982e1e0e64",
-  "bcda_abi" = [
+  "bcda_abi" : [
     {
       "constant": true,
       "inputs": [],
