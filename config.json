@@ -2250,7 +2250,7 @@
       "type": "function"
     }
   ],
-  "bcdatoken_address" : "0x9819140fc0c5ce7a9acb91b4886a59069f9eadf5",
+  "bcda_address" : "0x9819140fc0c5ce7a9acb91b4886a59069f9eadf5",
   "bcda_abi" : [
     {
       "constant": true,
