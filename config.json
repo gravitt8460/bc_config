@@ -3,7 +3,7 @@
   "services_host_port": "80",
   "eth_host": "18.217.227.228",
   "eth_host_port": "8545",
-  "consortium_address": "0x851f5360d55c385418028f34a84f8a0797351ed0",
+  "consortium_address": "0xc7f272ea2d60e8cfd9b7f1892cb2e01d9eb6312f",
   "consortium_abi": [
     {
       "constant": true,
@@ -828,7 +828,7 @@
       "type": "function"
     }
   ],
-  "bcde_address": "0x90b82c1a50c97a53cea43b3ae9ef1cacd01eef84",
+  "bcde_address": "0x0b2d34361680622a0bd192fcc150652a855761a0",
   "bcde_abi": [
     {
       "constant": true,
@@ -1555,7 +1555,7 @@
       "type": "function"
     }
   ],
-  "registry_address": "0xc5905ee5d8c2a6f2830669f6ea6f98506b09f165",
+  "registry_address": "0x75fd13dba39e37c40447ccdc7b9e6e77ff33ed42",
   "registry_abi": [
     {
       "constant": true,
@@ -2250,7 +2250,7 @@
       "type": "function"
     }
   ],
-  "bcdatoken_address" : "0xceeaa459ccd2113029214024fd6442982e1e0e64",
+  "bcdatoken_address" : "0x9819140fc0c5ce7a9acb91b4886a59069f9eadf5",
   "bcda_abi" : [
     {
       "constant": true,
@@ -2514,11 +2514,11 @@
     {
       "inputs": [
         {
-          "name": "_name",
+          "name": "name",
           "type": "string"
         },
         {
-          "name": "_symbol",
+          "name": "symbol",
           "type": "string"
         }
       ],
@@ -2558,6 +2558,11 @@
         },
         {
           "indexed": false,
+          "name": "diamonds",
+          "type": "uint256[]"
+        },
+        {
+          "indexed": false,
           "name": "timestamp",
           "type": "uint256"
         }
@@ -2577,6 +2582,11 @@
           "indexed": false,
           "name": "burner",
           "type": "address"
+        },
+        {
+          "indexed": false,
+          "name": "diamonds",
+          "type": "uint256[]"
         },
         {
           "indexed": false,
@@ -2652,7 +2662,7 @@
       "constant": false,
       "inputs": [
         {
-          "name": "_diamonds",
+          "name": "diamonds",
           "type": "uint256[]"
         }
       ],
@@ -2666,7 +2676,7 @@
       "constant": false,
       "inputs": [
         {
-          "name": "_puckId",
+          "name": "id",
           "type": "uint256"
         }
       ],
@@ -2721,7 +2731,7 @@
           "type": "address"
         }
       ],
-      "name": "getMintedPucks",
+      "name": "getPucksByMinter",
       "outputs": [
         {
           "name": "",
@@ -2750,11 +2760,11 @@
       "constant": true,
       "inputs": [
         {
-          "name": "addr",
+          "name": "user",
           "type": "address"
         }
       ],
-      "name": "getUserPucks",
+      "name": "getPucksByOwner",
       "outputs": [
         {
           "name": "",
@@ -2769,7 +2779,7 @@
       "constant": true,
       "inputs": [
         {
-          "name": "_puckId",
+          "name": "id",
           "type": "uint256"
         }
       ],
@@ -2788,11 +2798,11 @@
       "constant": true,
       "inputs": [
         {
-          "name": "_diamondId",
+          "name": "id",
           "type": "uint256"
         }
       ],
-      "name": "canAddDiamonds",
+      "name": "canAddDiamond",
       "outputs": [
         {
           "name": "",
@@ -2807,7 +2817,7 @@
       "constant": false,
       "inputs": [
         {
-          "name": "_diamondregistry",
+          "name": "diamondRegistry",
           "type": "address"
         }
       ],
@@ -2821,7 +2831,7 @@
       "constant": false,
       "inputs": [
         {
-          "name": "userAddr",
+          "name": "minter",
           "type": "address"
         }
       ],
@@ -2835,7 +2845,7 @@
       "constant": false,
       "inputs": [
         {
-          "name": "userAddr",
+          "name": "minter",
           "type": "address"
         }
       ],
@@ -2849,7 +2859,7 @@
       "constant": true,
       "inputs": [
         {
-          "name": "userAddr",
+          "name": "minter",
           "type": "address"
         }
       ],
@@ -2886,7 +2896,7 @@
           "type": "uint256"
         }
       ],
-      "name": "puckDetails",
+      "name": "getPuckDetails",
       "outputs": [
         {
           "name": "",
@@ -2913,7 +2923,7 @@
       "constant": true,
       "inputs": [
         {
-          "name": "userAddr",
+          "name": "minter",
           "type": "address"
         }
       ],
