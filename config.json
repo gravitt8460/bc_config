@@ -3,7 +3,7 @@
   "services_host_port": "80",
   "eth_host": "18.217.227.228",
   "eth_host_port": "8545",
-  "consortium_address": "0xc7f272ea2d60e8cfd9b7f1892cb2e01d9eb6312f",
+  "consortium_address": "0xee1d0dbcb94c798b9f1eebb901abd61f3f7ff429",
   "consortium_abi": [
     {
       "constant": true,
@@ -828,7 +828,7 @@
       "type": "function"
     }
   ],
-  "bcde_address": "0x0b2d34361680622a0bd192fcc150652a855761a0",
+  "bcde_address": "0x5becb6d41585143a9d080e13b8260e6ae2d00e20",
   "bcde_abi": [
     {
       "constant": true,
@@ -1555,7 +1555,7 @@
       "type": "function"
     }
   ],
-  "registry_address": "0x75fd13dba39e37c40447ccdc7b9e6e77ff33ed42",
+  "registry_address": "0x3f4f24e6a4dd77e0d60000b57b95bb04b35b421d",
   "registry_abi": [
     {
       "constant": true,
@@ -2250,7 +2250,7 @@
       "type": "function"
     }
   ],
-  "bcda_address" : "0x9819140fc0c5ce7a9acb91b4886a59069f9eadf5",
+  "bcda_address" : "0xf67710db2c2e0fb60e53e4669bb30b4cc0cfe0a5",
   "bcda_abi" : [
     {
       "constant": true,
@@ -2531,23 +2531,6 @@
       "inputs": [
         {
           "indexed": false,
-          "name": "reason",
-          "type": "bool"
-        },
-        {
-          "indexed": false,
-          "name": "from",
-          "type": "address"
-        }
-      ],
-      "name": "CheckStatus",
-      "type": "event"
-    },
-    {
-      "anonymous": false,
-      "inputs": [
-        {
-          "indexed": false,
           "name": "puckID",
           "type": "uint256"
         },
@@ -2708,30 +2691,11 @@
       "constant": true,
       "inputs": [
         {
-          "name": "_puckId",
+          "name": "puckId",
           "type": "uint256"
         }
       ],
       "name": "getDiamondsInUse",
-      "outputs": [
-        {
-          "name": "",
-          "type": "uint256[]"
-        }
-      ],
-      "payable": false,
-      "stateMutability": "view",
-      "type": "function"
-    },
-    {
-      "constant": true,
-      "inputs": [
-        {
-          "name": "minter",
-          "type": "address"
-        }
-      ],
-      "name": "getPucksByMinter",
       "outputs": [
         {
           "name": "",
@@ -2760,7 +2724,26 @@
       "constant": true,
       "inputs": [
         {
-          "name": "user",
+          "name": "minter",
+          "type": "address"
+        }
+      ],
+      "name": "getPucksByMinter",
+      "outputs": [
+        {
+          "name": "",
+          "type": "uint256[]"
+        }
+      ],
+      "payable": false,
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "constant": true,
+      "inputs": [
+        {
+          "name": "owner",
           "type": "address"
         }
       ],
