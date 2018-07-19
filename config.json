@@ -3,7 +3,7 @@
   "services_host_port": "80",
   "eth_host": "18.217.227.228",
   "eth_host_port": "8545",
-  "consortium_address": "0xee1d0dbcb94c798b9f1eebb901abd61f3f7ff429",
+  "consortium_address": "0xa20bf9176cc05a11f2550708a5439d31817ea381",
   "consortium_abi": [
     {
       "constant": true,
@@ -828,7 +828,7 @@
       "type": "function"
     }
   ],
-  "bcde_address": "0x5becb6d41585143a9d080e13b8260e6ae2d00e20",
+  "bcde_address": "0x20b5338a9a46bc01ecdd9242fada3376d3693930",
   "bcde_abi": [
     {
       "constant": true,
@@ -1555,7 +1555,7 @@
       "type": "function"
     }
   ],
-  "registry_address": "0x3f4f24e6a4dd77e0d60000b57b95bb04b35b421d",
+  "registry_address": "0x3292fb77573f65d6eb82bc2b53851995b3cf7945",
   "registry_abi": [
     {
       "constant": true,
@@ -2250,7 +2250,7 @@
       "type": "function"
     }
   ],
-  "bcda_address" : "0xf67710db2c2e0fb60e53e4669bb30b4cc0cfe0a5",
+  "bcda_address" : "0xd5df62841ea7a5f2fb26accc9015d2b5d2023837",
   "bcda_abi" : [
     {
       "constant": true,
@@ -2584,6 +2584,42 @@
       "anonymous": false,
       "inputs": [
         {
+          "indexed": false,
+          "name": "minter",
+          "type": "address"
+        }
+      ],
+      "name": "MinterAdded",
+      "type": "event"
+    },
+    {
+      "anonymous": false,
+      "inputs": [
+        {
+          "indexed": false,
+          "name": "minter",
+          "type": "address"
+        }
+      ],
+      "name": "MinterRemoved",
+      "type": "event"
+    },
+    {
+      "anonymous": false,
+      "inputs": [
+        {
+          "indexed": false,
+          "name": "registry",
+          "type": "address"
+        }
+      ],
+      "name": "DiamondRegistrySet",
+      "type": "event"
+    },
+    {
+      "anonymous": false,
+      "inputs": [
+        {
           "indexed": true,
           "name": "previousOwner",
           "type": "address"
@@ -2811,6 +2847,20 @@
       "type": "function"
     },
     {
+      "constant": true,
+      "inputs": [],
+      "name": "getDiamondRegistry",
+      "outputs": [
+        {
+          "name": "",
+          "type": "address"
+        }
+      ],
+      "payable": false,
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
       "constant": false,
       "inputs": [
         {
@@ -2919,6 +2969,33 @@
       ],
       "payable": false,
       "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "constant": false,
+      "inputs": [
+        {
+          "name": "owner",
+          "type": "address"
+        },
+        {
+          "name": "identityhash",
+          "type": "string"
+        }
+      ],
+      "name": "setHash",
+      "outputs": [],
+      "payable": false,
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "constant": false,
+      "inputs": [],
+      "name": "removeHash",
+      "outputs": [],
+      "payable": false,
+      "stateMutability": "nonpayable",
       "type": "function"
     }
   ]
