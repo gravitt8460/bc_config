@@ -3,7 +3,7 @@
   "services_host_port": "80",
   "eth_host": "18.217.227.228",
   "eth_host_port": "8545",
-  "consortium_address": "0xa20bf9176cc05a11f2550708a5439d31817ea381",
+  "consortium_address": "0x900fc3338b7565a571ee1bdc3098da4725dc15b9",
   "consortium_abi": [
     {
       "constant": true,
@@ -828,7 +828,7 @@
       "type": "function"
     }
   ],
-  "bcde_address": "0x20b5338a9a46bc01ecdd9242fada3376d3693930",
+  "bcde_address": "0x755de4135ecbbadbf96957c9a7e8b1bfee5f874e",
   "bcde_abi": [
     {
       "constant": true,
@@ -1555,7 +1555,7 @@
       "type": "function"
     }
   ],
-  "registry_address": "0x3292fb77573f65d6eb82bc2b53851995b3cf7945",
+  "registry_address": "0x4ccc21b14e10f012d68d610b7b9e7700a5c732c2",
   "registry_abi": [
     {
       "constant": true,
@@ -2250,7 +2250,7 @@
       "type": "function"
     }
   ],
-  "bcda_address" : "0xd5df62841ea7a5f2fb26accc9015d2b5d2023837",
+  "bcda_address" : "0x2c13969f6ad8229756665abd303d22ff732ad6f9",
   "bcda_abi" : [
     {
       "constant": true,
