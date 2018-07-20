@@ -2620,6 +2620,33 @@
       "anonymous": false,
       "inputs": [
         {
+          "indexed": false,
+          "name": "puckID",
+          "type": "uint256"
+        },
+        {
+          "indexed": false,
+          "name": "from",
+          "type": "address"
+        },
+        {
+          "indexed": false,
+          "name": "to",
+          "type": "address"
+        },
+        {
+          "indexed": false,
+          "name": "diamonds",
+          "type": "uint256[]"
+        }
+      ],
+      "name": "PuckTransfered",
+      "type": "event"
+    },
+    {
+      "anonymous": false,
+      "inputs": [
+        {
           "indexed": true,
           "name": "previousOwner",
           "type": "address"
@@ -2709,7 +2736,7 @@
       "constant": false,
       "inputs": [
         {
-          "name": "_to",
+          "name": "to",
           "type": "address"
         },
         {
